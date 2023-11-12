@@ -1,3 +1,13 @@
+/* Imported Fonts  */
+
+@font-face {
+   font-family: "helloKittyFont";
+   src: url("/font/Boldins.otf") format('opentype');
+}
+
+
+/* Global Styles */
+
 *{
    box-sizing: border-box;
 }
@@ -6,7 +16,125 @@ body{
    background-color: rgb(247, 210, 216);
 }
 
+h1{
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 90px;
+   font-family: helloKittyFont, sans-serif;
+   color: #5086C5;
+   font-size: 50px;
+}
+
+h1:hover{
+   color: #CB2C7C;
+}
+
+/* index html styles */
+
 .spaceKitty{
    height: 400px;
    border-radius: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
 }
+
+.navbar-brand, footer{
+   font-size: 30px;
+   font-family: 'Lobster Two', sans-serif;
+   color: white;
+}
+
+.containerTwo {
+   display: flex;
+   justify-content: center; /* Adjust as needed */
+   margin-top: 90px;
+ }
+ 
+ .shopKitty, .kittyCafe {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 40px;
+ }
+ 
+ .shopKitty img, .kittyCafe img {
+   height: 300px;
+   width: auto;
+   border: 2px solid #B5EDED;
+   margin-bottom: 10px; /* Adjust as needed */
+   border-radius: 50%;
+ }
+ 
+ .fontForP{
+   font-family: helloKittyFont, sans-serif;
+   font-size: 20px;
+   color: #D82386;
+ }
+
+
+ /* Styles for About me Page */
+.aboutHelloKitty {
+   margin: 20px;
+}
+
+.aboutParagraph {
+   margin-bottom: 20px;
+   line-height: 1.5; 
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.aboutMeImg{
+   width: 50%;
+   height: 200px;
+   border-radius: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   border: 3px solid #EB164D;
+   margin-bottom: 20px;
+}
+
+
+ /* Media Queries  */
+
+/* Media Query for Cellphones */
+@media only screen and (max-width: 600px) {
+   h1 {
+     font-size: 30px; /* Adjust font size for smaller screens */
+     margin-bottom: 50px; /* Adjust margin for smaller screens */
+   }
+ 
+   .spaceKitty {
+     height: 200px; /* Adjust height for smaller screens */
+   }
+ 
+   .navbar-brand {
+     font-size: 20px; /* Adjust font size for smaller screens */
+   }
+ 
+   .containerTwo {
+     flex-direction: column; /* Stack items vertically on smaller screens */
+     align-items: center;
+   }
+ 
+   .shopKitty, .kittyCafe {
+     padding: 20px; /* Adjust padding for smaller screens */
+   }
+ 
+   .shopKitty img, .kittyCafe img {
+     height: 200px; /* Adjust image height for smaller screens */
+     width: auto;
+     border: 2px solid #B5EDED;
+     margin-bottom: 10px;
+     border-radius: 50%;
+   }
+ 
+   .fontForP {
+     font-size: 16px; /* Adjust font size for smaller screens */
+   }
+ }
+ 
+
+ 
+ 
